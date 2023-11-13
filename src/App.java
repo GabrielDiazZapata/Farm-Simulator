@@ -1,8 +1,8 @@
-import net.salesiano.agricultura.granjeros.Granjeros;
+import net.salesiano.agricultura.granjeros.Granjero;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Granjeros paco = new Granjeros("Paco", 10);
+        Granjero paco = new Granjero("Paco", 10);
         paco.start();
     }
 }

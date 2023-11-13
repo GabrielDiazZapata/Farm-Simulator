@@ -10,8 +10,9 @@ public class Cliente extends Thread {
     }
 
     public void consumir() throws InterruptedException{
-        
-
+        for (int i = 0; i < cantidadVerduras; i++) {
+            
+        }
 
     }
 }
