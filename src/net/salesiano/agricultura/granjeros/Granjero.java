@@ -1,5 +1,7 @@
 package net.salesiano.agricultura.granjeros;
 
+import net.salesiano.agricultura.restaurante.Restaurante;
+
 public class Granjero extends Thread {
     // Atributos de la clase granjero:
     private String nombre;
@@ -7,6 +9,12 @@ public class Granjero extends Thread {
     private String[] verduras = { "lechuga", "repollo", "cebolla", "espinaca", "patata",
             "apio", "espárrago", "rábano", "brócoli", "alcachofa",
             "tomate", "pepino", "berenjena", "zanahoria", "judía verde" };
+    
+    private Restaurante restaurante;
+
+    public void setRestaurante(Restaurante restaurante){
+        this.restaurante = restaurante;
+    }
 
     public Granjero(String nombre, int cantidadDeVerduras) {
         this.nombre = nombre;

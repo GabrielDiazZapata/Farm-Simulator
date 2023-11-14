@@ -1,8 +1,16 @@
 package net.salesiano.agricultura.clientes;
 
+import net.salesiano.agricultura.restaurante.Restaurante;
+
 public class Cliente extends Thread {
     private String nombre;
     private int cantidadVerduras;
+
+    private Restaurante restaurante;
+    // Este metodo lo que hace es  asignar un restaurante al cliente para poder utilizarlo en el App.java
+    public void setRestaurante(Restaurante restaurante){
+        this.restaurante = restaurante;
+    } 
 
     public Cliente(String nombre, int cantidadVerduras){
         this.nombre = nombre;
