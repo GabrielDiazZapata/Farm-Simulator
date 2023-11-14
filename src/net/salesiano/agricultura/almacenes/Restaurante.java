@@ -1,5 +1,5 @@
 package net.salesiano.agricultura.almacenes;
 
-public class Almacen extends Thread {
+public class Restaurante extends Thread {
     
 }

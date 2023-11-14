@@ -11,8 +11,22 @@ public class Cliente extends Thread {
 
     public void consumir() throws InterruptedException{
         for (int i = 0; i < cantidadVerduras; i++) {
-            
+            int tiempoConsumo = (int) (Math.random() * 5000);
+            Thread.sleep(tiempoConsumo);
+
+            System.out.println(nombre + " ha consumido una verdura");
         }
 
+    }
+
+
+
+    @Override 
+    public void run() {
+        try {
+            consumir();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
