@@ -4,6 +4,7 @@ import net.salesiano.agricultura.restaurante.Restaurante;
 
 public class App {
     public static void main(String[] args)  {
+       // Aquí se crean unas instancias de granjeros, clientes y restaurante
        Granjero gonzalo = new Granjero("Gonzalo", 10);
        Granjero pepe = new Granjero("Pepe", 10);
 
@@ -13,16 +14,15 @@ public class App {
 
        Restaurante restaurante = new Restaurante(15);
 
+       // Se le asigna el restaurante a los granjeros y clientes
        gonzalo.setRestaurante(restaurante);
        pepe.setRestaurante(restaurante);
-
-
 
        laPinta.setRestaurante(restaurante);
        laNiña.setRestaurante(restaurante);
        laSantaMaria.setRestaurante(restaurante);
 
-
+        // iniciamos los hilos
        gonzalo.start();
        pepe.start();
        laPinta.start();
