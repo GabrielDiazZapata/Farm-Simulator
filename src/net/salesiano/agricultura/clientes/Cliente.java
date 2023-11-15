@@ -19,7 +19,7 @@ public class Cliente extends Thread {
     // Este es un metodo que simula el consumo de verduras por parte del cliente
     public void consumir() throws InterruptedException{
         for (int i = 0; i < cantidadVerduras; i++) {
-            // Se genera un tiempo de consimo aleatorio entre 0 y 10000 milisegundos
+            // Se genera un tiempo de consumo aleatorio entre 0 y 10000 milisegundos
             int tiempoConsumo = (int) (Math.random() * 10000);
             // El hilo se detiene durante el tiempo de consumo simulando la accion de consumir
             Thread.sleep(tiempoConsumo);

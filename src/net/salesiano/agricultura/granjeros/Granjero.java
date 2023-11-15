@@ -26,7 +26,7 @@ public class Granjero extends Thread {
     public void plantar() throws InterruptedException {
         for (int i = 0; i < cantidadDeVerduras; i++) {
             // Aquí simulo el tiempo que va tardar en crecer una verdura.
-            int crecimientoPlantas = (int) (Math.random() * 1000);
+            int crecimientoPlantas = (int) (Math.random() * 10000);
             Thread.sleep(crecimientoPlantas);
             // Se multiplican estos dos y dara como resultado un numero decimal
             // en el rango de la longitud del array: Si el array tiene como max 15
@@ -37,6 +37,7 @@ public class Granjero extends Thread {
             String verdura = verduras[verdurasAleatorias];
             // Guardar verdura en almacen
             System.out.println(nombre + " ha plantado una  " + verdura);
+            System.out.println(nombre + " ha almacenado una verdura ");
         }
     }
 
